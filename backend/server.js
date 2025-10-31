@@ -6,8 +6,9 @@ const app = express();
 
 // ===== CORS SETUP =====
 const allowedOrigins = [
-  'https://te-assignment-2025.vercel.app', // your Vercel frontend
-  'http://localhost:3000' // for local dev
+  'https://te-assignment-2025.vercel.app',
+  'https://te-assignment-frontend.onrender.com',
+  'http://localhost:3000'
 ];
 
 app.use(cors({
