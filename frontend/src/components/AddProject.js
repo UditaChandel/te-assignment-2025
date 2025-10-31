@@ -11,7 +11,7 @@ const SKILL_OPTIONS = [
   { value: "Java", label: "Java" },
   { value: "ReactJs", label: "ReactJs" },
   { value: "React Native", label: "React Native" },
-  { value: "Angular", label: "Angular" }, // Value from your AddProject file
+  { value: "Angular", label: "Angular" }, 
   { value: "NodeJs", label: "NodeJs" },
    { value: "PWA", label: "PWA" },
   { value: "Flutter", label: "Flutter" },
@@ -177,38 +177,38 @@ function AddProject() {
     placeholder="Select Skills..."
     classNamePrefix="select"
    styles={{
-                    control: (base, state) => ({ // Add 'state' here
+                    control: (base, state) => ({ 
                       ...base,
-                      // Apply border color based on error or focus state
+                      
                       borderColor: errors.skillSet
-                        ? "red" // Error color
+                        ? "red" 
                         : state.isFocused
-                          ? '#4e73df' // Your focus color
-                          : '#ced4da', // Default border color
+                          ? '#4e73df' 
+                          : '#ced4da', 
                       borderRadius: "8px",
                       minHeight: "45px",
-                      // Apply box shadow on focus
+                  
                       boxShadow: state.isFocused
-                        ? '0 0 0 0.2rem rgba(78, 115, 223, 0.15)' // Your focus shadow
+                        ? '0 0 0 0.2rem rgba(78, 115, 223, 0.15)' 
                         : null,
-                      // Ensure hover doesn't override focus styles
+                     
                       '&:hover': {
                         borderColor: errors.skillSet
                           ? "red"
                           : state.isFocused
                             ? '#4e73df'
-                            : '#adb5bd' // A subtle hover color
+                            : '#adb5bd' 
                       }
                     }),
-                    // Style fix from AddProject.js
+                   
                     option: (provided, state) => ({
                       ...provided,
                       backgroundColor: state.isFocused
-                        ? '#e8f0fe' // hover color
+                        ? '#e8f0fe' 
                         : state.isSelected
-                          ? 'white'   // selected item background
-                          : 'white',  // default background
-                      color: '#2c3e50', // text color
+                          ? 'white'   
+                          : 'white',  
+                      color: '#2c3e50', 
                       ':active': {
                         ...provided[':active'],
                         backgroundColor: '#e8f0fe',
