@@ -2,9 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
+
+
+// ===== CORS SETUP =====
 const allowedOrigins = [
   'https://te-assignment-2025.vercel.app', // your Vercel frontend
-  'http://localhost:3000' // optional: for local dev
+  'http://localhost:3000' // for local dev
 ];
 
 app.use(cors({
@@ -19,9 +22,6 @@ app.use(cors({
   credentials: true
 }));
 
-app.use(express.json());
-// Middleware
-app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
