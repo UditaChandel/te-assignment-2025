@@ -1,7 +1,7 @@
 {
   "name": "te-assignment-backend",
   "version": "1.0.0",
-  "description": "Backend for TE Assignment 2024",
+  "description": "Backend for TE Assignment 2025",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

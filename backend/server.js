@@ -3,25 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 
-
-// ===== CORS SETUP =====
-const allowedOrigins = [
-  'https://te-assignment-2025.vercel.app',
-  'https://te-assignment-frontend.onrender.com',
-  'http://localhost:3000'
-];
-
-app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      console.log("Blocked by CORS:", origin);
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true
-}));
+app.use(cors());
 
 app.use(express.json());
 
