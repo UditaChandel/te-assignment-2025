@@ -4,14 +4,14 @@ A full-stack project management application with CRUD operations built using Rea
 
 ## 🚀 Live Demo
 
-**Frontend**: [Your Deployed Frontend URL]  
-**Backend**: [Your Deployed Backend URL]
+**Frontend**: [https://te-assignment-2025.vercel.app/]  
+**Backend**: [https://te-assignment-2025.onrender.com]
 
 ## 🛠️ Tech Stack
 
 **Frontend**: React, React Router, Bootstrap 5  
 **Backend**: Node.js, Express, MongoDB, Mongoose  
-**Deployment**: Vercel
+**Deployment**: Vercel,Render
 
 ## ✨ Features
 
@@ -44,13 +44,13 @@ App runs on `http://localhost:3000`
 
 ## 🌐 Deployment Instructions
 
-### Backend (Render/Railway/Heroku)
+### Backend (Render)
 1. Push code to GitHub
 2. Connect repository to deployment platform
 3. Add environment variable: `MONGODB_URI=your_mongodb_atlas_uri`
 4. Deploy
 
-### Frontend (Vercel/Netlify)
+### Frontend (Vercel)
 1. Update `API_URL` in `AddProject.js`, `EditProject.js`, `ProjectList.js` with deployed backend URL
 2. Push to GitHub
 3. Connect repository to deployment platform
