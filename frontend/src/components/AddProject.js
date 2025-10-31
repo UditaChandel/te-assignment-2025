@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Form, Button, Card } from 'react-bootstrap';
 import Select, { components } from "react-select";
 
-const API_URL = 'http://localhost:5001/api';
+const API_URL = 'https://te-assignment-2025.onrender.com/api';
 
 const SKILL_OPTIONS = [
  { value: "Asp.Net", label: "Asp.Net" },

@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { Form, Button, Card, Spinner } from 'react-bootstrap';
 import Select, { components } from "react-select"; // Import react-select
 
-const API_URL = 'http://localhost:5001/api';
+const API_URL = 'https://te-assignment-2025.onrender.com/api';
 
 // Use the same object format as AddProject.js
 const SKILL_OPTIONS = [

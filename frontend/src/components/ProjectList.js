@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Modal, Button, Form, InputGroup } from 'react-bootstrap';
 
-const API_URL = 'http://localhost:5001/api';
+const API_URL = 'https://te-assignment-2025.onrender.com/api';
 
 
 function ProjectList() {
