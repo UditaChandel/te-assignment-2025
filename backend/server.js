@@ -2,7 +2,24 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
+const allowedOrigins = [
+  'https://te-assignment-2025.vercel.app', // your Vercel frontend
+  'http://localhost:3000' // optional: for local dev
+];
 
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      console.log("Blocked by CORS:", origin);
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
+
+app.use(express.json());
 // Middleware
 app.use(cors());
 app.use(express.json());
